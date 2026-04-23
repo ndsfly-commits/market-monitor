@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>市場策略儀表板 v4.2 - 2026-04-23</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", "PingFang TC", sans-serif; max-width: 1000px; margin: 20px auto; padding: 0 20px; background: #fafaf7; color: #222; line-height: 1.6; }
+  h1 { font-size: 26px; font-weight: 500; margin-bottom: 4px; }
+  .subtitle { color: #888; font-size: 13px; margin-bottom: 24px; }
+  .status-box { padding: 20px; border-radius: 12px; background: #eaf3de; border-left: 5px solid #27500a; margin-bottom: 24px; }
+  .status-layer { display:inline-block; padding:3px 10px; border-radius:6px; font-size:11px; background:rgba(0,0,0,0.08); margin-bottom:8px; }
+  .status-title { font-size: 22px; font-weight: 500; color: #27500a; margin: 0 0 8px; }
+  .status-action { font-size: 14px; color: #333; margin: 0 0 6px; }
+  .status-target { font-size: 15px; color: #27500a; margin: 4px 0 0; font-weight: 500; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 24px; }
+  .metric { background: #fff; padding: 12px 14px; border-radius: 10px; border: 0.5px solid #e5e5e0; }
+  .metric-label { font-size: 11px; color: #888; margin: 0 0 4px; }
+  .metric-value { font-size: 20px; font-weight: 500; margin: 0; }
+  .metric-sub { font-size: 10px; color: #999; margin: 2px 0 0; }
+  .section { background: #fff; padding: 18px 20px; border-radius: 12px; border: 0.5px solid #e5e5e0; margin-bottom: 16px; }
+  .section h2 { font-size: 15px; font-weight: 500; margin: 0 0 12px; color: #333; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+  .footer { text-align: center; font-size: 11px; color: #999; margin: 30px 0 20px; }
+</style>
+</head>
+<body>
+
+<h1>📊 市場策略儀表板 v4.2</h1>
+<div class="subtitle">更新時間：2026-04-23T12:48:48 · 三層訊號系統 + 風險遞進階梯</div>
+
+<div class="status-box">
+  <span class="status-layer">🟢 綠燈區（頂部評分 1）</span>
+  <p class="status-title">目標持倉：100% QQQ</p>
+  <p class="status-action">可持有TQQQ Runner；QQQ抱緊</p>
+  <p class="status-target">🎯 目標持倉：100% QQQ</p>
+</div>
+
+<div class="metrics">
+  <div class="metric">
+    <p class="metric-label">Shiller CAPE</p>
+    <p class="metric-value">40.5</p>
+    <p class="metric-sub">極度高估</p>
+  </div>
+  <div class="metric">
+    <p class="metric-label">VIX (即時/21日均)</p>
+    <p class="metric-value">19.1</p>
+    <p class="metric-sub">21日均 22.2 · 正常</p>
+  </div>
+  <div class="metric">
+    <p class="metric-label">F&G (即時/10日均)</p>
+    <p class="metric-value">68</p>
+    <p class="metric-sub">10日均 62 · greed</p>
+  </div>
+  <div class="metric">
+    <p class="metric-label">QQQ 回撤</p>
+    <p class="metric-value" style="color:#222">-0.0%</p>
+    <p class="metric-sub">$655.11 / $655.33</p>
+  </div>
+  <div class="metric">
+    <p class="metric-label">QQQ 週線 RSI</p>
+    <p class="metric-value">60.4</p>
+    <p class="metric-sub">正常</p>
+  </div>
+  <div class="metric">
+    <p class="metric-label">RSP/SPY 寬度</p>
+    <p class="metric-value" style="color:#222">+0.4%</p>
+    <p class="metric-sub">6個月變化</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🎯 風險遞進階梯（當前頂部評分：1/8）</h2>
+  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;">
+    
+        <div style="padding:10px;text-align:center;border-radius:8px;background:#eaf3de;border:2px solid #27500a;">
+          <p style="margin:0;font-size:12px;font-weight:500;color:#27500a;">🟢 綠燈 (0-2分)</p>
+          <p style="margin:4px 0 0;font-size:10px;color:#333;">100% QQQ + Runner</p>
+        </div>
+        <div style="padding:10px;text-align:center;border-radius:8px;background:#fafafa;border:0.5px solid #e0e0d8;">
+          <p style="margin:0;font-size:12px;font-weight:500;color:#666;">🟡 黃燈 (3-4分)</p>
+          <p style="margin:4px 0 0;font-size:10px;color:#999;">100% QQQ (Runner降落)</p>
+        </div>
+        <div style="padding:10px;text-align:center;border-radius:8px;background:#fafafa;border:0.5px solid #e0e0d8;">
+          <p style="margin:0;font-size:12px;font-weight:500;color:#666;">🟠 紅燈 (5分)</p>
+          <p style="margin:4px 0 0;font-size:10px;color:#999;">50% QQQI + 50% QQQ</p>
+        </div>
+        <div style="padding:10px;text-align:center;border-radius:8px;background:#fafafa;border:0.5px solid #e0e0d8;">
+          <p style="margin:0;font-size:12px;font-weight:500;color:#666;">🔴 深紅 (6分)</p>
+          <p style="margin:4px 0 0;font-size:10px;color:#999;">70% QQQI + 30% QQQ</p>
+        </div>
+        <div style="padding:10px;text-align:center;border-radius:8px;background:#fafafa;border:0.5px solid #e0e0d8;">
+          <p style="margin:0;font-size:12px;font-weight:500;color:#666;">⚫ 極端 (7-8分)</p>
+          <p style="margin:4px 0 0;font-size:10px;color:#999;">100% QQQI</p>
+        </div>
+  </div>
+  <p style="margin:10px 0 0;font-size:11px;color:#888;">當前位置：🟢 綠燈區 · 健康多頭 · 可持有TQQQ Runner；QQQ抱緊</p>
+</div>
+
+<div class="section">
+  <h2>🟡 中度訊號（QQQI ↔ QQQ 微調）</h2>
+  
+        <div style="padding:12px 14px;background:#f5f5f0;border-radius:6px;">
+          <p style="margin:0;color:#888;">🟡 中度訊號：未觸發</p>
+          <p style="margin:4px 0 0;font-size:11px;color:#999;">QQQ回撤 -0.0% 未達 -10% 門檻</p>
+        </div>
+</div>
+
+<div class="two-col">
+  <div class="section">
+    <h2>🟢 底部訊號評分：0/9</h2>
+    <p style="margin:0 0 8px;font-size:11px;color:#888;">需5分觸發TQQQ</p>
+    
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ VIX >= 40</span>
+          <span style="color:#999;">+2</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ VIX >= 50</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ F&G <= 25</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ F&G <= 15</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ QQQ 回撤 >= -15%</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ QQQ 回撤 >= -20%</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ QQQ 回撤 >= -30%</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ 週線 RSI(14) < 35</span>
+          <span style="color:#999;">+1</span>
+        </div>
+  </div>
+  <div class="section">
+    <h2>🔴 頂部訊號評分：1/8</h2>
+    <p style="margin:0 0 8px;font-size:11px;color:#888;">CAPE門檻已達，需5分觸發QQQI</p>
+    
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#27500a;">✓ CAPE >= 35 (啟動門檻) 🔒門檻</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ F&G 10日均 >= 75</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ F&G 10日均 >= 85</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ VIX 21日均 < 13</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ RSP/SPY 6個月跌 > 5%</span>
+          <span style="color:#999;">+2</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ 週線 RSI(14) > 75</span>
+          <span style="color:#999;">+1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:0.5px solid #eee;font-size:12px;">
+          <span style="color:#999;">○ 週線 RSI(14) > 80</span>
+          <span style="color:#999;">+1</span>
+        </div>
+  </div>
+</div>
+
+<div class="footer">
+  本儀表板由 daily_monitor_v4.py 自動生成 · 僅供參考，不構成投資建議<br>
+  SOP v4.2 · 三層訊號系統 + 風險遞進階梯
+</div>
+
+</body>
+</html>

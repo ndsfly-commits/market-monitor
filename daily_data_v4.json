@@ -1,0 +1,266 @@
+{
+  "latest": {
+    "timestamp": "2026-04-23T12:48:48.085823",
+    "date": "2026-04-23",
+    "raw": {
+      "cape": 40.5,
+      "vix_current": 19.1200008392334,
+      "vix_ma21": 22.156190781366256,
+      "fg_current": 68.5,
+      "fg_rating": "greed",
+      "fg_ma10": 62.5,
+      "qqq_price": 655.1099853515625,
+      "qqq_high_52w": 655.3300170898438,
+      "drawdown": -0.03357571491358747,
+      "rsi_weekly": 60.36234684284229,
+      "breadth_current": 0.28466978875285187,
+      "breadth_change_pct": 0.43320436913511534
+    },
+    "bottom_score": 0,
+    "bottom_breakdown": [
+      {
+        "label": "VIX >= 40",
+        "passed": false,
+        "pts": 2
+      },
+      {
+        "label": "VIX >= 50",
+        "passed": false,
+        "pts": 1
+      },
+      {
+        "label": "F&G <= 25",
+        "passed": false,
+        "pts": 1
+      },
+      {
+        "label": "F&G <= 15",
+        "passed": false,
+        "pts": 1
+      },
+      {
+        "label": "QQQ 回撤 >= -15%",
+        "passed": false,
+        "pts": 1
+      },
+      {
+        "label": "QQQ 回撤 >= -20%",
+        "passed": false,
+        "pts": 1
+      },
+      {
+        "label": "QQQ 回撤 >= -30%",
+        "passed": false,
+        "pts": 1
+      },
+      {
+        "label": "週線 RSI(14) < 35",
+        "passed": false,
+        "pts": 1
+      }
+    ],
+    "top_score": 1,
+    "top_breakdown": [
+      {
+        "label": "CAPE >= 35 (啟動門檻)",
+        "passed": true,
+        "pts": 1,
+        "is_threshold": true
+      },
+      {
+        "label": "F&G 10日均 >= 75",
+        "passed": false,
+        "pts": 1,
+        "is_threshold": false
+      },
+      {
+        "label": "F&G 10日均 >= 85",
+        "passed": false,
+        "pts": 1,
+        "is_threshold": false
+      },
+      {
+        "label": "VIX 21日均 < 13",
+        "passed": false,
+        "pts": 1,
+        "is_threshold": false
+      },
+      {
+        "label": "RSP/SPY 6個月跌 > 5%",
+        "passed": false,
+        "pts": 2,
+        "is_threshold": false
+      },
+      {
+        "label": "週線 RSI(14) > 75",
+        "passed": false,
+        "pts": 1,
+        "is_threshold": false
+      },
+      {
+        "label": "週線 RSI(14) > 80",
+        "passed": false,
+        "pts": 1,
+        "is_threshold": false
+      }
+    ],
+    "top_active": true,
+    "mid_signal": {
+      "triggered": false,
+      "level": "未觸發",
+      "shift_pct": 0,
+      "reason": "QQQ回撤 -0.0% 未達 -10% 門檻"
+    },
+    "holding_base": {
+      "zone": "🟢 綠燈區",
+      "state": "健康多頭",
+      "holding": "100% QQQ",
+      "qqq_pct": 100,
+      "qqqi_pct": 0,
+      "tqqq_runner_ok": true,
+      "detail": "可持有TQQQ Runner；QQQ抱緊"
+    },
+    "action": {
+      "layer": "🟢 綠燈區（頂部評分 1）",
+      "urgency": "low",
+      "title": "目標持倉：100% QQQ",
+      "detail": "可持有TQQQ Runner；QQQ抱緊",
+      "target_holding": "100% QQQ",
+      "color": "#27500a",
+      "bg": "#eaf3de"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "2026-04-23T12:48:48.085823",
+      "date": "2026-04-23",
+      "raw": {
+        "cape": 40.5,
+        "vix_current": 19.1200008392334,
+        "vix_ma21": 22.156190781366256,
+        "fg_current": 68.5,
+        "fg_rating": "greed",
+        "fg_ma10": 62.5,
+        "qqq_price": 655.1099853515625,
+        "qqq_high_52w": 655.3300170898438,
+        "drawdown": -0.03357571491358747,
+        "rsi_weekly": 60.36234684284229,
+        "breadth_current": 0.28466978875285187,
+        "breadth_change_pct": 0.43320436913511534
+      },
+      "bottom_score": 0,
+      "bottom_breakdown": [
+        {
+          "label": "VIX >= 40",
+          "passed": false,
+          "pts": 2
+        },
+        {
+          "label": "VIX >= 50",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "F&G <= 25",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "F&G <= 15",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "QQQ 回撤 >= -15%",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "QQQ 回撤 >= -20%",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "QQQ 回撤 >= -30%",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "週線 RSI(14) < 35",
+          "passed": false,
+          "pts": 1
+        }
+      ],
+      "top_score": 1,
+      "top_breakdown": [
+        {
+          "label": "CAPE >= 35 (啟動門檻)",
+          "passed": true,
+          "pts": 1,
+          "is_threshold": true
+        },
+        {
+          "label": "F&G 10日均 >= 75",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "F&G 10日均 >= 85",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "VIX 21日均 < 13",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "RSP/SPY 6個月跌 > 5%",
+          "passed": false,
+          "pts": 2,
+          "is_threshold": false
+        },
+        {
+          "label": "週線 RSI(14) > 75",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "週線 RSI(14) > 80",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        }
+      ],
+      "top_active": true,
+      "mid_signal": {
+        "triggered": false,
+        "level": "未觸發",
+        "shift_pct": 0,
+        "reason": "QQQ回撤 -0.0% 未達 -10% 門檻"
+      },
+      "holding_base": {
+        "zone": "🟢 綠燈區",
+        "state": "健康多頭",
+        "holding": "100% QQQ",
+        "qqq_pct": 100,
+        "qqqi_pct": 0,
+        "tqqq_runner_ok": true,
+        "detail": "可持有TQQQ Runner；QQQ抱緊"
+      },
+      "action": {
+        "layer": "🟢 綠燈區（頂部評分 1）",
+        "urgency": "low",
+        "title": "目標持倉：100% QQQ",
+        "detail": "可持有TQQQ Runner；QQQ抱緊",
+        "target_holding": "100% QQQ",
+        "color": "#27500a",
+        "bg": "#eaf3de"
+      }
+    }
+  ]
+}
