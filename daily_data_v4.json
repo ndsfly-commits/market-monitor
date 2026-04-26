@@ -1,7 +1,7 @@
 {
   "latest": {
-    "timestamp": "2026-04-25T06:12:11.732645",
-    "date": "2026-04-25",
+    "timestamp": "2026-04-26T07:11:13.612299",
+    "date": "2026-04-26",
     "raw": {
       "cape": 40.66,
       "vix_current": 18.709999084472656,
@@ -396,6 +396,137 @@
     {
       "timestamp": "2026-04-25T06:12:11.732645",
       "date": "2026-04-25",
+      "raw": {
+        "cape": 40.66,
+        "vix_current": 18.709999084472656,
+        "vix_ma21": 21.850000199817476,
+        "fg_current": 66.0,
+        "fg_rating": "greed",
+        "fg_ma10": 64.4,
+        "qqq_price": 663.8800048828125,
+        "qqq_high_52w": 664.510009765625,
+        "drawdown": -0.09480743307910515,
+        "rsi_weekly": 62.33886343587263,
+        "breadth_current": 0.28297895914002613,
+        "breadth_change_pct": -0.08294414179686152
+      },
+      "bottom_score": 0,
+      "bottom_breakdown": [
+        {
+          "label": "VIX >= 40",
+          "passed": false,
+          "pts": 2
+        },
+        {
+          "label": "VIX >= 50",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "F&G <= 25",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "F&G <= 15",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "QQQ 回撤 >= -15%",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "QQQ 回撤 >= -20%",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "QQQ 回撤 >= -30%",
+          "passed": false,
+          "pts": 1
+        },
+        {
+          "label": "週線 RSI(14) < 35",
+          "passed": false,
+          "pts": 1
+        }
+      ],
+      "top_score": 1,
+      "top_breakdown": [
+        {
+          "label": "CAPE >= 35 (啟動門檻)",
+          "passed": true,
+          "pts": 1,
+          "is_threshold": true
+        },
+        {
+          "label": "F&G 10日均 >= 75",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "F&G 10日均 >= 85",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "VIX 21日均 < 13",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "RSP/SPY 6個月跌 > 5%",
+          "passed": false,
+          "pts": 2,
+          "is_threshold": false
+        },
+        {
+          "label": "週線 RSI(14) > 75",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        },
+        {
+          "label": "週線 RSI(14) > 80",
+          "passed": false,
+          "pts": 1,
+          "is_threshold": false
+        }
+      ],
+      "top_active": true,
+      "mid_signal": {
+        "triggered": false,
+        "level": "未觸發",
+        "shift_pct": 0,
+        "reason": "QQQ回撤 -0.1% 未達 -10% 門檻"
+      },
+      "holding_base": {
+        "zone": "🟢 綠燈區",
+        "state": "健康多頭",
+        "holding": "100% QQQ",
+        "qqq_pct": 100,
+        "qqqi_pct": 0,
+        "tqqq_runner_ok": true,
+        "detail": "可持有TQQQ Runner；QQQ抱緊"
+      },
+      "action": {
+        "layer": "🟢 綠燈區（頂部評分 1）",
+        "urgency": "low",
+        "title": "目標持倉：100% QQQ",
+        "detail": "可持有TQQQ Runner；QQQ抱緊",
+        "target_holding": "100% QQQ",
+        "color": "#27500a",
+        "bg": "#eaf3de"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T07:11:13.612299",
+      "date": "2026-04-26",
       "raw": {
         "cape": 40.66,
         "vix_current": 18.709999084472656,
